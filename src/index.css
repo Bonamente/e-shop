@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -8,8 +10,32 @@ body {
   height: 100%;
 }
 
+:root {
+  --clr-base: #3f4e65;
+  --clr-base-lt: #5c6370; 
+  --clr-base-dk: #111111;
+  --clr-white: #ffffff;
+
+  --clr-primary:#ffc85e;
+  --clr-primary-dk:#f3a50d;
+
+  --ff-base: 'Inter', sans-serif;     
+  --fs-base: 14px;
+
+  --fs-1: 40px;
+  --fs-2: 30px;
+  --fs-3: 16px;
+  --fs-4: 14px;
+  --fs-5: 12px;
+}
+
 body {
   min-width: 320px;
+
+  font-family: var(--ff-base);
+  font-size: var(--fs-base);
+  font-weight: 300;
+  line-height: 1.5;  
 }
 
 #root {
