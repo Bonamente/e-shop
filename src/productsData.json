@@ -1,0 +1,318 @@
+ [
+  {
+    "barcode": 4604049097501,
+    "brand": "BioMio",
+    "manufacturer": "BioMio",
+    "name": "Экологичное туалетное мыло BIOMIO BIO-SOAP апельсин и лаванда",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "body"
+    ],
+    "size_type": "weight",
+    "size": 90,
+    "price": 50,
+    "img_url": "/images/1.jpg"
+  },
+  {
+    "barcode": 4604049097502,
+    "brand": "BioMio",
+    "manufacturer": "BioMio",
+    "name": "BIOMIO BIO-SOAP антибактериальное жидкое мыло",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "body",
+      "hand",
+      "face"
+    ],
+    "size_type": "volume",
+    "size": 300,
+    "price": 100,
+    "img_url": "/images/2.jpg"
+  },
+  {
+    "barcode": 4604049097503,
+    "brand": "Rexona",
+    "manufacturer": "Rexona",
+    "name": "Rexona Men Антиперспирант-карандаш невидимый, 50 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "body"
+    ],
+    "size_type": "volume",
+    "size": 50,
+    "price": 120,
+    "img_url": "/images/3.jpg"
+  },
+  {
+    "barcode": 4604049097504,
+    "brand": "Rexona",
+    "manufacturer": "Rexona",
+    "name": "Антиперспирант стик Rexona Men Кобальт, 50 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "body"
+    ],
+    "size_type": "volume",
+    "size": 50,
+    "price": 110,
+    "img_url": "/images/4.jpg"
+  },
+  {
+    "barcode": 4604049097505,
+    "brand": "ARAVIA Professional",
+    "manufacturer": "ARAVIA Professional",
+    "name": "ARAVIA Professional Крем для рук Cream Oil с маслом арганы и сладкого миндаля, 550 мл.",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "hand"
+    ],
+    "size_type": "volume",
+    "size": 550,
+    "price": 400,
+    "img_url": "/images/5.jpg"
+  },
+  {
+    "barcode": 4604049097506,
+    "brand": "ARAVIA Professional",
+    "manufacturer": "ARAVIA Professional",
+    "name": "ARAVIA Professional Крем для рук Сливки с коллагеном, 300 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "hand"
+    ],
+    "size_type": "volume",
+    "size": 300,
+    "price": 250,
+    "img_url": "/images/6.jpg"
+  },
+  {
+    "barcode": 4604049097507,
+    "brand": "DNC",
+    "manufacturer": "DNC",
+    "name": "DNC Крем для рук, концентрат Воск Для Рук, 80 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "hand"
+    ],
+    "size_type": "volume",
+    "size": 80,
+    "price": 130,
+    "img_url": "/images/7.jpg"
+  },
+  {
+    "barcode": 4604049097508,
+    "brand": "ESTEL",
+    "manufacturer": "ESTEL",
+    "name": "ESTEL PROFESSIONAL Крем для рук увлажняющий 100 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "hand"
+    ],
+    "size_type": "volume",
+    "size": 100,
+    "price": 150,
+    "img_url": "/images/8.jpg"
+  },
+  {
+    "barcode": 4604049097509,
+    "brand": "ARAVIA Professional",
+    "manufacturer": "ARAVIA Professional",
+    "name": "ARAVIA Professional Крем для ног суперувлажняющий Super Moisture, 100 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "foot"
+    ],
+    "size_type": "volume",
+    "size": 100,
+    "price": 135,
+    "img_url": "/images/9.jpg"
+  },
+  {
+    "barcode": 4604049097510,
+    "brand": "DNC",
+    "manufacturer": "DNC",
+    "name": "DNC Крем-воск для ног для гладких и нежных пяточек, 80 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "foot"
+    ],
+    "size_type": "volume",
+    "size": 80,
+    "price": 145,
+    "img_url": "/images/10.jpg"
+  },
+  {
+    "barcode": 4604049097511,
+    "brand": "DNC",
+    "manufacturer": "DNC",
+    "name": "DNC, набор Крем для ног увлажняющий с мочевиной , 60 мл 2 шт",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "foot"
+    ],
+    "size_type": "volume",
+    "size": 60,
+    "price": 200,
+    "img_url": "/images/11.jpg"
+  },
+  {
+    "barcode": 4604049097512,
+    "brand": "ARAVIA Professional",
+    "manufacturer": "ARAVIA Professional",
+    "name": "ARAVIA Professional Маска для глубокого очищения лица против черных точек Black Head Clay Mask, 150 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "face"
+    ],
+    "size_type": "volume",
+    "size": 150,
+    "price": 145,
+    "img_url": "/images/12.jpg"
+  },
+  {
+    "barcode": 4604049097513,
+    "brand": "Nivea",
+    "manufacturer": "Nivea",
+    "name": "Nivea Care Очищающий гель для умывания лица, 225 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "face"
+    ],
+    "size_type": "volume",
+    "size": 225,
+    "price": 180,
+    "img_url": "/images/13.jpg"
+  },
+  {
+    "barcode": 4604049097514,
+    "brand": "Nivea",
+    "manufacturer": "Nivea",
+    "name": "Nivea Двойной эффект Средство для снятия стойкого макияжа с глаз, с экстрактом василька, 125 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "face"
+    ],
+    "size_type": "volume",
+    "size": 125,
+    "price": 150,
+    "img_url": "/images/14.jpg"
+  },
+  {
+    "barcode": 4604049097515,
+    "brand": "Nivea",
+    "manufacturer": "Nivea",
+    "name": "Бальзам для губ Nivea с маслами авокадо и дерева ши, 4,8 г",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "face"
+    ],
+    "size_type": "weight",
+    "size": 4.8,
+    "price": 25,
+    "img_url": "/images/15.jpg"
+  },
+  {
+    "barcode": 4604049097516,
+    "brand": "ARAVIA Professional",
+    "manufacturer": "ARAVIA Professional",
+    "name": "ARAVIA Professional Маска разогревающая для роста волос Pre-Wash Grow Mask, 300 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "hair"
+    ],
+    "size_type": "volume",
+    "size": 300,
+    "price": 380,
+    "img_url": "/images/16.jpg"
+  },
+  {
+    "barcode": 4604049097517,
+    "brand": "ARAVIA Professional",
+    "manufacturer": "ARAVIA Professional",
+    "name": "ARAVIA Professional Шампунь увлажняющий для восстановления сухих, обезвоженных волос бессульфатный Hydra Pure Shampoo, 1000 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "hair"
+    ],
+    "size_type": "volume",
+    "size": 1000,
+    "price": 350,
+    "img_url": "/images/17.jpg"
+  },
+  {
+    "barcode": 4604049097518,
+    "brand": "DNC",
+    "manufacturer": "DNC",
+    "name": "DNC Дрожжи для роста волос, 100 г",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "hair"
+    ],
+    "size_type": "weight",
+    "size": 100,
+    "price": 190,
+    "img_url": "/images/18.jpg"
+  },
+  {
+    "barcode": 4604049097519,
+    "brand": "DNC",
+    "manufacturer": "DNC",
+    "name": "DNC Масло Бэй для волос, 55 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "hair"
+    ],
+    "size_type": "volume",
+    "size": 55,
+    "price": 200,
+    "img_url": "/images/19.jpg"
+  },
+  {
+    "barcode": 4604049097520,
+    "brand": "BIETTE",
+    "manufacturer": "BIETTE",
+    "name": "BIETTE Крем-парафин для рук ног тела увлажняющий с облепихой, 250 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "foot",
+      "hand",
+      "body"
+    ],
+    "size_type": "volume",
+    "size": 250,
+    "price": 270,
+    "img_url": "/images/20.jpg"
+  },
+  {
+    "barcode": 4604049097521,
+    "brand": "SHARMOON",
+    "manufacturer": "SHARMOON",
+    "name": "SHARMOON Крем-парафин для рук ног тела увлажняющий от трещин сухости кожи с маслом персиковой косточки 250мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "foot",
+      "hand",
+      "body"
+    ],
+    "size_type": "volume",
+    "size": 250,
+    "price": 275,
+    "img_url": "/images/21.jpg"
+  },
+  {
+    "barcode": 4604049097522,
+    "brand": "Nivea",
+    "manufacturer": "Nivea",
+    "name": "Интенсивный увлажняющий крем Nivea Soft, для лица, рук и тела, с маслом жожоба и витамином Е, 200 мл",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quaerat numquam dolores ipsa culpa modi aut, fugit minus id",
+    "care_type": [
+      "foot",
+      "hand",
+      "body"
+    ],
+    "size_type": "volume",
+    "size": 200,
+    "price": 315,
+    "img_url": "/images/22.jpg"
+  }
+]
