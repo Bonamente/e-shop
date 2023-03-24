@@ -1,0 +1,41 @@
+.linkList {
+  display: flex;
+  align-items: center;
+}
+
+.linkItem {
+  position: relative;
+}
+
+.linkItem:not(:last-child) {
+  padding-right: 30px;
+  margin-right: 30px;
+}
+
+.linkItem:not(:last-child)::after {
+  position: absolute;
+  top: -7px;      
+  right: 0;
+  
+  content: '';
+  
+  width: 1px;
+  height: 39px;
+
+  border: 1px dashed var(--clr-base-dk);
+
+  opacity: 0.05;
+}
+
+.navLink {
+  font-weight: 400; 
+}
+
+.navLink:hover,
+.navLink:focus {
+  text-decoration: underline; 
+}
+
+.active {
+  text-decoration: underline; 
+}
