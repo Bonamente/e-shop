@@ -2,14 +2,11 @@ import { Link } from 'react-router-dom';
 import styles from './CatalogBtn.module.css';
 
 type CatalogBtnProps = {
-  type?: 'large' | 'small';
+  size?: 'large' | 'small';
 };
 
-const CatalogBtn: React.FC<CatalogBtnProps> = ({ type = 'large' }) => (
-  <Link
-    className={`${type === 'large' ? styles.largeBtn : styles.smallBtn}`}
-    to="/"
-  >
+const CatalogBtn: React.FC<CatalogBtnProps> = ({ size = 'large' }) => (
+  <Link className={size === 'large' ? styles.largeBtn : styles.smallBtn} to="/">
     Каталог
   </Link>
 );
