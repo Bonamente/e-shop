@@ -1,0 +1,196 @@
+.navbar {
+  width: 100%;  
+}
+
+.navbarTopContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  padding-top: 12px;
+}
+
+.innerWrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+@media (max-width: 1367px) {
+  .innerWrapper  {
+    width: 100%;
+    min-height: 61px;
+    justify-content: center;
+  }
+}
+
+.navbarTop {
+  min-height: 61px;
+  border-bottom: 1px solid rgba(63, 78, 101, 0.2);
+}
+
+.address {  
+  position: relative;
+  min-width: 295px;
+  padding-left: 35px;
+}
+
+.address::before {
+  position: absolute;
+  top: 9px;      
+  left: 0;
+  
+  content: '';
+  
+  width: 20px;
+  height: 20px;
+
+  background-image: url('src/assets/img/pointer-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.address::after {
+  position: absolute;
+  top: 0;      
+  right: 0;
+  
+  content: '';
+  
+  width: 1px;
+  height: 39px;
+
+  border: 1px dashed var(--clr-base-dk);
+
+  opacity: 0.05;
+}
+
+.addressText,
+.mailAddressText {
+  font-size: var(--fs-4);
+  font-weight: 600;
+  color: var(--clr-base-dk);
+}
+
+.addressSmallText,
+.mailText {
+  font-size: var(--fs-5);
+  font-weight: 300;
+  color: var(--clr-base);
+  line-height: 14px;
+}
+
+.mail {
+  position: relative;
+
+  min-width: 180px;
+  padding-left: 35px;
+  margin-left: 20px;
+}
+
+.mail::before {
+  position: absolute;
+  top: 9px;      
+  left: 0;
+  
+  content: '';
+  
+  width: 20px;
+  height: 20px;
+
+  background-image: url('src/assets/img/envelope-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navbarBottom {
+  min-height: 108px;
+  border-bottom: 1px solid rgba(63, 78, 101, 0.2);
+}
+
+.navbarBottomContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 100%;
+  padding-top: 7px;
+}
+
+.bottomInnerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  width: 48%;
+}
+
+@media (max-width: 1367px) {
+  .bottomInnerWrapper  {
+    width: 100%;
+    min-height: 108px;
+    justify-content: center;
+    gap: 0 15px;
+  }
+}
+
+.contacts {
+  position: relative;
+
+  text-align: right;
+
+  width: 240px;
+  min-height: 92px;
+  padding-top: 18px;
+  padding-right: 84px; 
+
+  background-image: url("src/assets/img/call-center-operator.png");
+
+  background-size: 70px 92px;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.contacts::after {
+  position: absolute;
+  top: 28px;      
+  right: 6px;
+  
+  content: '';
+  
+  width: 8px;
+  height: 8px;
+
+  border-radius: 50%;
+  background-color: var(--clr-action);
+}
+
+.phone {
+  margin-bottom: 5px;
+
+  font-weight: 600;
+  color: var(--clr-base-dk);
+}
+
+.officeHours {
+  font-weight: 300;
+  font-size: var(--fs-5);
+}
+
+.bookCall {
+  font-size: var(--fs-6);
+  text-decoration: underline;
+}
+
+.bookCall:hover,
+.bookCall:focus {
+  color: var(--clr-action);
+}
+
+.bookCall:active {
+  color: var(--clr-primary-dk);
+}
