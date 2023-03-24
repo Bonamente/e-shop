@@ -2,7 +2,7 @@ import styles from './Navbar.module.css';
 import NavLinks from '../navLinks/NavLinks';
 import Logo from '../logo/Logo';
 import CatalogBtn from '../buttons/catalog-btn/CatalogBtn';
-import SearchBar from '../search/search-bar/SearchBar';
+import SearchBar from '../search-bar/SearchBar';
 import PriceListBtn from '../buttons/priceList-btn/PriceListBtn';
 import CartInfo from '../cart-info/CartInfo';
 
