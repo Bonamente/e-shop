@@ -1,0 +1,407 @@
+.footer {
+  padding-top: 71px;
+  padding-bottom: 116px;
+
+  color: var(--clr-white);
+  background-color: var(--clr-base);
+}
+
+@media (max-width: 1367px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 16px;
+    padding-bottom: 15px;
+  }
+}
+
+.footer h2 {
+  margin-bottom: 25px;
+
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.footerContainer {
+  display: flex;
+  flex-wrap: wrap;  
+}
+
+@media (max-width: 1367px) {
+  .footerContainer {
+    justify-content: space-around;
+  }
+}
+
+section:not(:first-child):not(:last-child) {
+  margin-right: 95px;
+}
+
+@media (max-width: 1367px) {
+  section:not(:first-child):not(:last-child) {
+    margin-right: unset;
+  }
+}
+
+.about {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  max-width: 320px;
+  margin-right: 59px;  
+}
+
+@media (max-width: 1367px) {
+  .about {
+    margin-right: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    max-width: unset;
+    width: 100%;
+  }
+}
+
+.topPriceListInfo {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+}
+
+.topPriceListInfo > a {
+  width: 149px;
+  min-height: 40px;
+  padding-left: 30px;
+
+  font-size: var(--fs-5);
+}
+
+.topPriceListInfo a::after {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-image: url(src/assets/img/download-icon.svg);
+
+  background-size: 13px 13px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.description {
+  margin-top: 15px;
+  margin-bottom: 45px;
+
+  font-weight: 400;
+  font-size: var(--fs-3);
+}
+
+.mobileBreak {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .description {
+    margin-bottom: 15px;
+    font-size: var(--fs-5);
+  }
+
+  .break {
+    display: none;
+  }
+
+  .mobileBreak {
+    display: inline-block;
+  }
+}
+
+.emailWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 282px;
+  height: 59px;
+  padding: 10px;
+  padding-left: 15px;
+  
+  border-radius: 50px;
+  background-color: var(--clr-white); 
+}
+
+.emailLabel {
+  display: block;
+  margin-bottom: 14px;
+
+  font-weight: 400;
+  font-size: var(--fs-5);
+}
+
+.emailInput {  
+  width: 190px;
+  height: 100%;
+  padding: 5px;  
+
+  font-size: var(--fs-5);
+  color: var(--clr-base-dk);
+  
+  border: none;
+  border-radius: 5px;
+  background-color: var(--clr-white);  
+ 
+  outline: none;
+}
+
+.emailBtn {
+  width: 39px;
+  height: 39px; 
+
+  border-radius: 50%;  
+  background-color: var(--clr-primary);
+  background-image: url("src/assets/img/mail-arrow-icon.svg");
+  background-size: 8px 15px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.emailBtn:hover,
+.emailBtn:focus {
+  background-color: var(--clr-primary-dk);
+}
+
+.emailBtn:active {
+ transform: scale(0.95);
+}
+
+.menu nav ul {
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.menu nav ul li:not(:last-child) {
+  padding-right: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.menu nav ul li::after {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    margin-top: 30px;
+  }
+
+  .menu .menuTitle {
+    margin-bottom: 17px;
+  }
+
+  .menu nav ul a {
+    font-size: var(--fs-5);
+  }
+}
+
+.innerWrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 392px;
+  margin-right: 95px;
+}
+
+@media (max-width: 1367px) {
+  .innerWrapper {
+    margin-right: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  .innerWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    margin-right: unset;
+  }
+}
+
+.categoriesList li {
+  margin-bottom: 20px;
+}
+
+.categoriesList .categoriesLink {
+  color: var(--clr-white);
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+  .categories {
+    margin-top: 30px;
+  }
+
+  .categories .categoriesTitle {
+    margin-bottom: 17px;
+  }
+
+  .categoriesLink {
+    font-size: var(--fs-5);
+  }
+}
+
+.categoriesList .categoriesLink:hover,
+.categoriesList .categoriesLink:focus,
+.categoriesList .categoriesLink:active {
+  text-decoration: underline;
+}
+
+.contactsWrapper {
+  display: flex;
+}
+
+@media (max-width: 1367px) {
+  .contactsWrapper {
+    gap: 0 150px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contactsWrapper {
+    margin-top: -8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contactsWrapper {
+    gap: 0 8px;   
+  }
+}
+
+.paymentNetworks {
+  display: flex;
+}
+
+.messengers {
+  margin-right: 103px;
+}
+
+@media (max-width: 1367px) {
+  .messengers {    
+    margin-right: unset;
+  }
+}
+
+@media (max-width: 767px) {
+  .messengers {    
+    padding-top: 50px;
+  }
+}
+
+.messangersTitle {
+  margin-bottom: 15px;
+  padding-left: 10px;
+
+  font-weight: 400;
+  font-size: var( --fs-4);
+}
+
+.messangersList {
+  display: flex;
+  justify-content: space-between;
+  max-width: 94px;
+  padding-left: 6px;
+}
+
+@media (max-width: 500px) {
+  .messangersTitle{
+    padding-left: unset;
+  }
+  .messangersList {
+    padding-left: unset;
+  }
+}
+
+.messangersItem {
+  transition: all 0.2s ease-in;
+}
+
+.messangersLink {
+  display: block;
+}
+
+.messangersLink:hover,
+.messangersLink:focus {
+  transform: scale(1.2);
+}
+
+.messangersItem .messangersLink:active {
+  transform: scale(0.98);
+}
+ 
+.priceListInfo {
+  margin-bottom: 20px;
+}
+
+.contactInfo {
+  margin-bottom: 22px;
+}
+
+.phone {
+  margin-bottom: 5px;
+}
+
+.phoneLink {
+  font-weight: 600;  
+}
+
+.officeHours {
+  font-weight: 300;
+  font-size: var( --fs-5);
+  font-size: 12px;
+}
+
+.bookCall {
+  font-size: var( --fs-6);
+
+  text-decoration: underline;
+  text-underline-offset: 1.6px;
+}
+
+.bookCall:hover,
+.bookCall:focus {
+  color: var(--clr-action);
+}
+
+.bookCall:active {
+  color: var(--clr-primary-dk);
+}
+
+.mail {
+  margin-bottom: 20px;
+}
+
+.mailAddressText a {
+  font-weight: 600;  
+  line-height: 18px;
+}
+
+.mailText {
+  font-size: var( --fs-5);
+}
+
+.paymentNetworks {
+  display: flex;
+  justify-content: space-between;
+
+  width: 126px;
+}
