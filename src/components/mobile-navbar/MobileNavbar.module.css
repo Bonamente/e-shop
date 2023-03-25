@@ -181,6 +181,15 @@
  transform: scale(0.95);
 }
 
+.navbarBottom ::placeholder { 
+  color: var(--clr-base);
+  opacity: 1; 
+}
+
+.navbarBottom :-ms-input-placeholder {
+  color: var(--clr-base);
+}
+
 .infoWrapper {
   display: flex;
   flex-direction: column;
