@@ -1,7 +1,11 @@
 import { NavLink } from 'react-router-dom';
 import styles from './NavLinks.module.css';
 
-const NavLinks = () => {
+type NavLinksProps = {
+  closeMobileNavMenu?: (arg: boolean) => void;
+};
+
+const NavLinks: React.FC<NavLinksProps> = ({ closeMobileNavMenu }) => {
   return (
     <nav className={`header-nav ${styles.nav}`}>
       <ul className={`linkList ${styles.linkList}`}>
@@ -11,6 +15,9 @@ const NavLinks = () => {
             end
             className={({ isActive }) =>
               isActive ? `${styles.navLink} active` : `${styles.navLink}`
+            }
+            onClick={
+              closeMobileNavMenu ? () => closeMobileNavMenu(false) : undefined
             }
           >
             О компании
@@ -23,6 +30,9 @@ const NavLinks = () => {
             className={({ isActive }) =>
               isActive ? `${styles.navLink} active` : `${styles.navLink}`
             }
+            onClick={
+              closeMobileNavMenu ? () => closeMobileNavMenu(false) : undefined
+            }
           >
             Доставка и оплата
           </NavLink>
@@ -34,6 +44,9 @@ const NavLinks = () => {
             className={({ isActive }) =>
               isActive ? `${styles.navLink} active` : `${styles.navLink}`
             }
+            onClick={
+              closeMobileNavMenu ? () => closeMobileNavMenu(false) : undefined
+            }
           >
             Возврат
           </NavLink>
@@ -44,6 +57,9 @@ const NavLinks = () => {
             end
             className={({ isActive }) =>
               isActive ? `${styles.navLink} active` : `${styles.navLink}`
+            }
+            onClick={
+              closeMobileNavMenu ? () => closeMobileNavMenu(false) : undefined
             }
           >
             Контакты
