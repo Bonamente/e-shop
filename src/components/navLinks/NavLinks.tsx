@@ -7,7 +7,7 @@ type NavLinksProps = {
 
 const NavLinks: React.FC<NavLinksProps> = ({ closeMobileNavMenu }) => {
   return (
-    <nav className={`header-nav ${styles.nav}`}>
+    <nav className={`nav ${styles.nav}`}>
       <ul className={`linkList ${styles.linkList}`}>
         <li className={styles.linkItem}>
           <NavLink
