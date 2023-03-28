@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-weight: 500;
+  font-size: var(--fs-3);
+  color: var( --clr-base-dk);
+}
+
+.name {
+  width: 150px;
+
+  font-weight: 400;
+  font-size: var(--fs-3);
+  line-height: 1.5;
+  color: var( --clr-base);
+
+  border: none;
+  background-color: transparent;
+}
