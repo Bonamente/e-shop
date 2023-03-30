@@ -1,0 +1,65 @@
+.wrapper {
+  display: flex;                                 
+}
+
+.back {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  width: 79px;
+  height: 32px;
+  padding-left: 37px;
+
+  font-weight: 600;
+  font-size: var(--fs-6);
+  line-height: 1.2;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--clr-base);
+
+  transition: all 0.2s ease-in;
+}
+
+.back::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  content: '';
+  
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  background-color: rgba(255, 202, 101, 0.3);
+  background-image: url('src/assets/img/arrow-left-dark.svg');
+  background-size: 4px 8px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.back:active {
+  transform: scale(0.97);
+}
+
+.back:active::before {
+  background-color: var(--clr-primary);
+}
+
+.crum {
+  padding-right: 10px;
+  margin-right: 10px;
+
+  font-weight: 300;
+  font-size: var(--fs-4);
+  line-height: 1.2; 
+  
+  border-right: 1px dotted rgba(63, 78, 101, 0.3);
+}
+
+.crum:last-child {
+  border: none;
+
+  opacity: 0.5;
+}
