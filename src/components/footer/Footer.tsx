@@ -1,39 +1,13 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import Logo from '../logo/Logo';
 import NavLinks from '../navLinks/NavLinks';
 import PriceListBtn from '../buttons/priceList-btn/PriceListBtn';
 import styles from './Footer.module.css';
+import useResize from '../../hooks/useResize';
 
 const Footer = () => {
-  const [isSmallScreen, setIsSmallScreen] = useState(
-    () => window.innerWidth < 767
-  );
-
-  useEffect(() => {
-    if (window.innerWidth > 767) {
-      setIsSmallScreen(false);
-    } else if (window.innerWidth < 767) {
-      setIsSmallScreen(true);
-    }
-  }, []);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 767) {
-        setIsSmallScreen(false);
-      } else if (window.innerWidth < 767) {
-        setIsSmallScreen(true);
-      }
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
+  const [isSmallScreen] = useResize();
 
   return (
     <footer className={styles.footer}>
