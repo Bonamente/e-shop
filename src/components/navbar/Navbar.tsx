@@ -42,7 +42,7 @@ const Navbar = () => {
           <div className={styles.bottomInnerWrapper}>
             <Logo />
             <CatalogBtn />
-            <SearchBar />
+            <SearchBar type="stub" />
           </div>
 
           <div className={styles.bottomInnerWrapper}>
