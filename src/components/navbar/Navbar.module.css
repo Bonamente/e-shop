@@ -47,7 +47,7 @@
   width: 20px;
   height: 20px;
 
-  background-image: url('src/assets/img/pointer-icon.svg');
+  background-image: url('/src/assets/img/pointer-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -100,7 +100,7 @@
   width: 20px;
   height: 20px;
 
-  background-image: url('src/assets/img/envelope-icon.svg');
+  background-image: url('/src/assets/img/envelope-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -148,7 +148,7 @@
   padding-top: 18px;
   padding-right: 84px; 
 
-  background-image: url("src/assets/img/call-center-operator.png");
+  background-image: url("/src/assets/img/call-center-operator.png");
 
   background-size: 70px 92px;
   background-position: right;

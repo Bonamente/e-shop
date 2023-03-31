@@ -38,13 +38,13 @@
 }
 
 .arrowLeft {
-  background-image: url('src/assets/img/pagination-left-arrow.svg');
+  background-image: url('/src/assets/img/pagination-left-arrow.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .arrowRight {
-  background-image: url('src/assets/img/pagination-right-arrow.svg');
+  background-image: url('/src/assets/img/pagination-right-arrow.svg');
   background-position: center;
   background-repeat: no-repeat;
 }

@@ -3,7 +3,7 @@ import styles from './Breadcrumbs.module.css';
 import useResize from '../../hooks/useResize';
 
 type BreadcrumbsProps = {
-  page: string;
+  page?: string;
   product?: string;
 };
 

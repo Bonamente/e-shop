@@ -39,7 +39,7 @@
   width: 15px;
   height: 15px;
 
-  background-image: url('src/assets/img/catalog-icon.svg');
+  background-image: url('/src/assets/img/catalog-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -72,7 +72,7 @@
   width: 15px;
   height: 15px;
 
-  background-image: url('src/assets/img/catalog-icon-dark.svg');
+  background-image: url('/src/assets/img/catalog-icon-dark.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
