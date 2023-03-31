@@ -3,6 +3,13 @@
   align-items: center;
 }
 
+
+@media (max-width: 767px) {
+  .form {
+    margin-top: 20px;
+  }
+}
+
 .title {
   font-weight: 500;
   font-size: var(--fs-3);
@@ -10,7 +17,7 @@
 }
 
 .name {
-  width: 150px;
+  max-width: 200px;
 
   font-weight: 400;
   font-size: var(--fs-3);
