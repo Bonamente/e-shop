@@ -9,10 +9,10 @@ import styles from './SearchBar.module.css';
 type SearchBarProps = {
   // For demo version
   type?: 'stub';
-  size?: 'small' | 'middle' | 'large';
+  size?: 'small' | 'medium' | 'large';
 };
 
-const SearchBar: React.FC<SearchBarProps> = ({ type, size = 'middle' }) => {
+const SearchBar: React.FC<SearchBarProps> = ({ type, size = 'medium' }) => {
   const dispatch = useAppDispatch();
   const { filters } = useAppSelector((state) => state.filters);
 
@@ -45,27 +45,13 @@ const SearchBar: React.FC<SearchBarProps> = ({ type, size = 'middle' }) => {
 
   return (
     // Used the div tag instead of the form tag, because this component is used inside another form.
-    <div
-      className={`${styles.searchForm} ${size}`}
-      // used inline styles because there is some problem with dynamic styles in css modules (or it's just me)
-      style={{
-        width: `${
-          size === 'small' ? '238px' : size === 'middle' ? '263px' : '290px'
-        }`,
-      }}
-    >
+    <div className={`${styles.searchForm} ${styles[size]}`}>
       <label className="visually-hidden" htmlFor="search-input">
         Введите искомое значение
       </label>
       <input
         id="search-input"
-        className={styles.searchInput}
-        // used inline styles because there is some problem with dynamic styles in css modules (or it's just me)
-        style={{
-          width: `${
-            size === 'small' ? '174px' : size === 'middle' ? '190px' : '225px'
-          }`,
-        }}
+        className={`${styles.searchInput} ${styles[size]}`}
         type="text"
         name="search"
         value={type ? '' : searchValue}
