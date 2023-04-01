@@ -1,0 +1,148 @@
+.cart {
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.cart nav {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1023px) {
+  .cart nav {
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+}
+
+.title {
+  font-weight: 500;
+  font-size: var(--fs-1);
+  line-height: 1.2;  
+  color: var(--clr-base-dk);
+  text-transform: uppercase; 
+}
+
+@media (max-width: 1367px) { 
+  .title {   
+    font-size: 20px; 
+  }
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 310px;  
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.emptyCartTitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.emptyCartLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 184px;
+  min-height: 59px;
+  padding: 10px;
+ 
+  font-size: var(--fs-3);
+  font-weight: 700;
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+
+  border-radius: 50px;
+}
+
+.emptyCartLink:hover,
+.emptyCartLink:focus {
+  background-color: var(--clr-primary-dk);
+}
+
+.emptyCartLink:active {
+  transform: scale(0.98);
+}
+
+.items {
+  margin-top: 50px;
+}
+
+.items .item {
+  padding: 50px 0;
+}
+
+@media (max-width: 1367px) { 
+  .items {
+    margin-top: 20px;
+  }
+
+  .items .item {
+    padding: 20px 0;
+  }
+}
+
+.items .item:first-child {
+  border-top: 1px dashed rgba(63, 78, 101, 0.2)
+}
+
+.items .item {
+  border-bottom: 1px dashed rgba(63, 78, 101, 0.2)
+}
+
+.pageBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 159px;
+}
+
+@media (max-width: 1023px) {
+  .pageBottom {
+    flex-direction: column;
+    min-height: unset;
+    padding-top: 25px;
+    padding-bottom: 50px;    
+  }
+
+  .pageBottom div {
+    margin-bottom: 20px;
+    order: -1;
+  }
+}
+
+.orderBtn {
+  justify-content: center;
+
+  width: 192px;
+  height: 59px;
+
+  color: var(--clr-white);
+  border-radius: 50px;
+  background-color: var(--clr-primary);
+}
+
+@media (max-width: 1023px) {
+  .orderBtn {
+    width: 290px;
+    height: 80px;
+  }
+}
+
+.orderBtn:hover,
+.orderBtn:focus {
+  background-color: var(--clr-primary-dk);
+}
+
+.orderBtn:active {
+  transform: scale(0.98);
+}
