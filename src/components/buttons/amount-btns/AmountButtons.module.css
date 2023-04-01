@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 113px;
+  height: 23px;
+}
+
+.amountBtn {
+  justify-content: center;
+  width: 34px;
+  height: 23px;
+
+  font-weight: 300;
+  font-size: var(--fs-5);
+  line-height: 15px;
+  color: var(--clr-base);
+
+  background: linear-gradient(90deg, rgba(255, 198, 80, 0.3) 0%, rgba(254, 202, 110, 0.3) 97.25%);
+  border-radius: 1000px;
+}
+
+.amountBtn:hover,
+.amountBtn:focus {
+  background-color: var(--clr-primary);
+}
+
+.amountBtn:active,
+.smallBtn:active {
+  transform: scale(0.98);
+}
