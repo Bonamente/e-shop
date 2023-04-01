@@ -71,7 +71,7 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
                 <p className={styles.price}>
                   {price} <span className={styles.currency}>₸</span>
                 </p>
-                <AddToCartBtn />
+                <AddToCartBtn product={product} />
               </div>
             </div>
           </article>
