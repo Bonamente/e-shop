@@ -1,0 +1,79 @@
+.admin {
+  min-height: 500px;
+  padding: 60px 0;
+}
+
+.title {
+  margin-top: 30px;
+}
+
+.actions,
+.removeBlock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 582px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.selectWrapper {
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+  height: 350px;
+  margin-top: 30px;
+}
+
+.removeBlock {
+  flex-direction: column;
+
+  height: unset;
+}
+
+.btnWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 400px;
+}
+
+.confirmBtn,
+.cancelBtn {
+  justify-content: center;
+
+  width: 192px;
+  height: 59px;
+
+  margin-top: 30px;
+
+  color: var(--clr-white);
+  border-radius: 50px;
+  background-color: var(--clr-primary);
+}
+
+.cancelBtn {
+  background-color: var(--clr-danger);
+} 
+
+.cancelBtn:hover,
+.cancelBtn:focus {
+  background-color: var(--clr-danger-dk);
+}
+
+.confirmBtn:hover,
+.confirmBtn:focus {
+  background-color: var(--clr-primary-dk);
+}
+
+.confirmBtn:active,
+.cancelBtn:active {
+  transform: scale(0.98);
+}
+
+.removingProduct {
+  margin-top: 30px;
+  text-align: center;
+}
