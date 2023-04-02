@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+}
+
+.cartBtn {
+  position: relative;
+
+  display: block;
+ 
+  background-image: url('/src/assets/img/dark-cart-icon.svg');
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+.cartBtn:hover .cartValue,
+.cartBtn:focus .cartValue {
+  background-color: var(--clr-primary-dk);
+}
+
+.cartValue {
+  position: absolute;
+  top: 2px;
+  right: -11px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+
+  border-radius: 50%;
+
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+
+  transition: all 0.2s ease-in;
+}
+
+.detailedInfo {
+  margin-left: 24px;
+  padding-top: 5px;
+}
+
+.detailedText {
+  font-weight: 300;
+  font-size: var(--fs-5);
+}
+
+.totalPrice {
+  font-weight: 600;
+  color: var(--clr-base-dk);
+}
