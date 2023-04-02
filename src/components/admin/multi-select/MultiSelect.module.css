@@ -1,0 +1,66 @@
+.multiSelect {
+  position: relative;
+
+  min-width: 250px;
+  padding-top: 24px;
+}
+
+.multiSelect:hover .options {
+  display: block;
+}
+
+.title {
+  font-size: var(--fs-3);
+  font-weight: 700;
+  color: var(--clr-base-dk);
+}
+
+.multiSelect .selected {
+  border: solid 1px var(--bg-clr-base);;
+  font-size: 14px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-image: url('/src/assets/img/arrow-down.svg');
+  background-size: 8px 8px;
+  background-position: 230px;
+  background-repeat: no-repeat;
+}
+
+.multiSelect .options {
+  position: absolute; 
+  left: 0;
+
+  display: none;  
+  
+  width: 100%;
+  padding: 5px 0px; 
+ 
+  border: solid 1px var(--bg-clr-base);
+}
+
+.multiSelect .option {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+
+  cursor: pointer;
+}
+
+.multiSelect .option:hover {
+  background-color: var(--bg-clr-base);
+}
+
+.multiSelect .optionCheckbox {
+  margin-right: 6px;
+}
+
+.label {
+  font-weight: 500;
+  font-size: var(--fs-4);
+  color: var(--clr-base);
+
+  cursor: pointer;
+}
