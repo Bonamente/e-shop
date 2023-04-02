@@ -57,14 +57,14 @@
   font-size: var(--fs-3);
   font-weight: 700;
   color: var(--clr-white);
-  background-color: var(--clr-primary);
+  background-color: var(--clr-action);
 
   border-radius: 50px;
 }
 
 .emptyCartLink:hover,
 .emptyCartLink:focus {
-  background-color: var(--clr-primary-dk);
+  background-color: var(--clr-action-dk);
 }
 
 .emptyCartLink:active {
