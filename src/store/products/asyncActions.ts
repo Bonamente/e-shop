@@ -1,13 +1,8 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import { addProductsToLocalStorage } from '../../utils/localStorage';
 import { Product } from './types';
 import type { RootState } from '..';
 
-import {
-  addProductsToLocalStorage,
-  removeProductsFromLocalStorage,
-} from '../../utils/localStorage';
-
-// admin action
 export const addProduct = createAsyncThunk<
   Product[],
   Product,
@@ -39,7 +34,6 @@ export const editProduct = createAsyncThunk<
   return updatedProducts;
 });
 
-// admin action
 export const removeProduct = createAsyncThunk<
   Product[],
   number,
@@ -52,11 +46,3 @@ export const removeProduct = createAsyncThunk<
 
   return updatedProducts;
 });
-
-// admin action
-export const removeAllProducts = createAsyncThunk<void>(
-  'products/removeAllProducts',
-  async () => {
-    removeProductsFromLocalStorage();
-  }
-);

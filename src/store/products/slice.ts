@@ -1,15 +1,8 @@
 import { createSlice, Reducer } from '@reduxjs/toolkit';
 import { getProductsFromLocalStorage } from '../../utils/localStorage';
-
-import { ProductsState } from './types';
-import {
-  removeAllProducts,
-  addProduct,
-  editProduct,
-  removeProduct,
-} from './asyncActions';
-
+import { addProduct, editProduct, removeProduct } from './asyncActions';
 import productsData from '../../productsData.json';
+import { ProductsState } from './types';
 
 const localStorageProducts = getProductsFromLocalStorage();
 const products = localStorageProducts || productsData;
@@ -60,17 +53,6 @@ const productsSlice = createSlice({
         state.status = 'idle';
       })
       .addCase(removeProduct.rejected, (state, { payload }) => {
-        state.status = 'error';
-        console.log(payload); // Refactor
-      })
-      .addCase(removeAllProducts.pending, (state) => {
-        state.status = 'loading';
-      })
-      .addCase(removeAllProducts.fulfilled, (state) => {
-        state.status = 'idle';
-        state.products = products;
-      })
-      .addCase(removeAllProducts.rejected, (state, { payload }) => {
         state.status = 'error';
         console.log(payload); // Refactor
       });
