@@ -5,11 +5,11 @@ export type Product = {
   manufacturer: string;
   name: string;
   description: string;
-  care_type: string[];
-  size_type: 'volume' | 'weight';
+  careType: string[];
+  sizeType: 'volume' | 'weight';
   size: number;
   price: number;
-  img_url: string;
+  imgUrl: string;
 };
 
 export type ProductsState = {
