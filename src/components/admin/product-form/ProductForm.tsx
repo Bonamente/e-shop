@@ -48,8 +48,6 @@ const ProductForm: React.FC<ProductFormProps> = ({
   const [selectedCareTypes, setSelectedCareTypes] =
     useState<string[]>(initialCareTypes);
 
-  console.log(selectedCareTypes);
-
   const [hasError, setHasError] = useState(false);
 
   // for demo use only
