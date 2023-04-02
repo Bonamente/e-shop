@@ -182,7 +182,7 @@ const MainFilter = () => {
                 transform: `${isExpanded ? 'rotate(180deg)' : 'rotate(0deg)'}`,
               }}
             >
-              <img src="/icons/arrow-down.svg" role="presentation" alt="" />
+              <img src="icons/arrow-down.svg" role="presentation" alt="" />
             </span>
           </button>
         </div>

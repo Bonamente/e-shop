@@ -237,7 +237,7 @@ const ProductForm: React.FC<ProductFormProps> = ({
             defaultValue={product ? product.imgUrl : ''}
             type="text"
             required
-            placeholder="/images/1.jpg"
+            placeholder="images/1.jpg"
           />
         </div>
         <div className={styles.column}>

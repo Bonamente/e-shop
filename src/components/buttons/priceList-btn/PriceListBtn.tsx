@@ -7,7 +7,7 @@ type PriceListBtnProps = {
 const PriceListBtn: React.FC<PriceListBtnProps> = ({ type = 'contained' }) => (
   <a
     className={`${type === 'contained' ? styles.containedBtn : styles.textBtn}`}
-    href="/icons/price-list.jpg"
+    href="icons/price-list.jpg"
     download
   >
     <span>Прайс-лист</span>

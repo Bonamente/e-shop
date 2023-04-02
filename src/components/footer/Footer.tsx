@@ -170,7 +170,7 @@ const Footer = () => {
                 </h3>
                 <div>
                   <img
-                    src="/icons/visa-icon.svg"
+                    src="icons/visa-icon.svg"
                     alt="Visa"
                     width={61}
                     height={39}
@@ -178,7 +178,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <img
-                    src="/icons/mastercard-icon.svg"
+                    src="icons/mastercard-icon.svg"
                     alt="MasterCard"
                     width={61}
                     height={39}
@@ -212,7 +212,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <img
-                      src="/icons/whatsapp-icon.svg"
+                      src="icons/whatsapp-icon.svg"
                       alt="WhatsApp"
                       width={39}
                       height={39}
@@ -227,7 +227,7 @@ const Footer = () => {
                     rel="noreferrer"
                   >
                     <img
-                      src="/icons/telegram-icon.svg"
+                      src="icons/telegram-icon.svg"
                       alt="Telegram"
                       width={39}
                       height={39}

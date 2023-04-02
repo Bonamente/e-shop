@@ -10,7 +10,7 @@
     "sizeType": "weight",
     "size": 90,
     "price": 50,
-    "imgUrl": "/images/1.jpg"
+    "imgUrl": "images/1.jpg"
   },
   {
     "id": 4604049097502,
@@ -23,7 +23,7 @@
     "sizeType": "volume",
     "size": 300,
     "price": 100,
-    "imgUrl": "/images/2.jpg"
+    "imgUrl": "images/2.jpg"
   },
   {
     "id": 4604049097503,
@@ -36,7 +36,7 @@
     "sizeType": "volume",
     "size": 50,
     "price": 120,
-    "imgUrl": "/images/3.jpg"
+    "imgUrl": "images/3.jpg"
   },
   {
     "id": 4604049097504,
@@ -49,7 +49,7 @@
     "sizeType": "volume",
     "size": 50,
     "price": 110,
-    "imgUrl": "/images/4.jpg"
+    "imgUrl": "images/4.jpg"
   },
   {
     "id": 4604049097505,
@@ -62,7 +62,7 @@
     "sizeType": "volume",
     "size": 550,
     "price": 400,
-    "imgUrl": "/images/5.jpg"
+    "imgUrl": "images/5.jpg"
   },
   {
     "id": 4604049097506,
@@ -75,7 +75,7 @@
     "sizeType": "volume",
     "size": 300,
     "price": 250,
-    "imgUrl": "/images/6.jpg"
+    "imgUrl": "images/6.jpg"
   },
   {
     "id": 4604049097507,
@@ -88,7 +88,7 @@
     "sizeType": "volume",
     "size": 80,
     "price": 130,
-    "imgUrl": "/images/7.jpg"
+    "imgUrl": "images/7.jpg"
   },
   {
     "id": 4604049097508,
@@ -101,7 +101,7 @@
     "sizeType": "volume",
     "size": 100,
     "price": 150,
-    "imgUrl": "/images/8.jpg"
+    "imgUrl": "images/8.jpg"
   },
   {
     "id": 4604049097509,
@@ -114,7 +114,7 @@
     "sizeType": "volume",
     "size": 100,
     "price": 135,
-    "imgUrl": "/images/9.jpg"
+    "imgUrl": "images/9.jpg"
   },
   {
     "id": 4604049097510,
@@ -127,7 +127,7 @@
     "sizeType": "volume",
     "size": 80,
     "price": 145,
-    "imgUrl": "/images/10.jpg"
+    "imgUrl": "images/10.jpg"
   },
   {
     "id": 4604049097511,
@@ -140,7 +140,7 @@
     "sizeType": "volume",
     "size": 60,
     "price": 200,
-    "imgUrl": "/images/11.jpg"
+    "imgUrl": "images/11.jpg"
   },
   {
     "id": 4604049097512,
@@ -153,7 +153,7 @@
     "sizeType": "volume",
     "size": 150,
     "price": 145,
-    "imgUrl": "/images/12.jpg"
+    "imgUrl": "images/12.jpg"
   },
   {
     "id": 4604049097513,
@@ -166,7 +166,7 @@
     "sizeType": "volume",
     "size": 225,
     "price": 180,
-    "imgUrl": "/images/13.jpg"
+    "imgUrl": "images/13.jpg"
   },
   {
     "id": 4604049097514,
@@ -179,7 +179,7 @@
     "sizeType": "volume",
     "size": 125,
     "price": 150,
-    "imgUrl": "/images/14.jpg"
+    "imgUrl": "images/14.jpg"
   },
   {
     "id": 4604049097515,
@@ -192,7 +192,7 @@
     "sizeType": "weight",
     "size": 4.8,
     "price": 25,
-    "imgUrl": "/images/15.jpg"
+    "imgUrl": "images/15.jpg"
   },
   {
     "id": 4604049097516,
@@ -205,7 +205,7 @@
     "sizeType": "volume",
     "size": 300,
     "price": 380,
-    "imgUrl": "/images/16.jpg"
+    "imgUrl": "images/16.jpg"
   },
   {
     "id": 4604049097517,
@@ -218,7 +218,7 @@
     "sizeType": "volume",
     "size": 1000,
     "price": 350,
-    "imgUrl": "/images/17.jpg"
+    "imgUrl": "images/17.jpg"
   },
   {
     "id": 4604049097518,
@@ -231,7 +231,7 @@
     "sizeType": "weight",
     "size": 100,
     "price": 190,
-    "imgUrl": "/images/18.jpg"
+    "imgUrl": "images/18.jpg"
   },
   {
     "id": 4604049097519,
@@ -244,7 +244,7 @@
     "sizeType": "volume",
     "size": 55,
     "price": 200,
-    "imgUrl": "/images/19.jpg"
+    "imgUrl": "images/19.jpg"
   },
   {
     "id": 4604049097520,
@@ -257,7 +257,7 @@
     "sizeType": "volume",
     "size": 250,
     "price": 270,
-    "imgUrl": "/images/20.jpg"
+    "imgUrl": "images/20.jpg"
   },
   {
     "id": 4604049097521,
@@ -270,7 +270,7 @@
     "sizeType": "volume",
     "size": 250,
     "price": 275,
-    "imgUrl": "/images/21.jpg"
+    "imgUrl": "images/21.jpg"
   },
   {
     "id": 4604049097522,
@@ -283,6 +283,6 @@
     "sizeType": "volume",
     "size": 200,
     "price": 315,
-    "imgUrl": "/images/22.jpg"
+    "imgUrl": "images/22.jpg"
   }
 ]
