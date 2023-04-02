@@ -4,6 +4,6 @@ import react from '@vitejs/plugin-react-swc';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'https://github.com/Bonamente/e-shop',
+  base: '/e-shop',
   plugins: [react()],
 });
