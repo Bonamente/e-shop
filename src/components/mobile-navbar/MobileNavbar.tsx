@@ -2,15 +2,17 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import { useState } from 'react';
-import styles from './MobileNavbar.module.css';
-import NavLinks from '../navLinks/NavLinks';
+import useDisableBodyScroll from '../../hooks/useDisableBodyScroll';
 import Logo from '../logo/Logo';
+import NavLinks from '../navLinks/NavLinks';
 import CatalogBtn from '../buttons/catalog-btn/CatalogBtn';
 import PriceListBtn from '../buttons/priceList-btn/PriceListBtn';
-import CartInfo from '../cart-info/CartInfo';
+import CartInfo from '../cart/cart-info/CartInfo';
+import styles from './MobileNavbar.module.css';
 
 const MobileNavbar = () => {
   const [showDropdown, setShowDropdown] = useState(false);
+  useDisableBodyScroll(showDropdown);
 
   return (
     <div className={styles.mobileNavbar}>
