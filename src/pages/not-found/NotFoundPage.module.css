@@ -1,0 +1,26 @@
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+}
+
+.title {
+  margin-bottom: 30px;
+  padding-top: 50px;
+  
+  text-align: center;
+}
+
+.link {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--clr-action);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--clr-action-dk);
+  text-decoration: underline;
+} 
