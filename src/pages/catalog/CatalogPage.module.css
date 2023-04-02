@@ -1,0 +1,127 @@
+.catalog nav {
+  margin-top: 48px;
+}
+
+@media (max-width: 767px) {
+  .catalog nav {
+    margin-top: 20px;
+  }
+}
+
+.topWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+
+  margin-top: 48px;
+  margin-bottom: 17px;
+}
+
+@media (max-width: 767px) {
+  .topWrapper {
+    margin-top: 25px;
+    margin-bottom: 17px;
+  }
+} 
+
+.pageTitle {
+  font-size: var(--fs-1);
+  line-height: 1.2;
+  font-weight: 500;
+  color: var(--clr-base-dk);
+  text-transform: uppercase;
+}
+
+@media (max-width: 1023px) {
+  .pageTitle {
+    font-size: var(--fs-2);
+  }
+}
+
+@media (max-width: 767px) {
+  .pageTitle {    
+    font-size: 20px;  
+  }
+}
+
+.middleWrapper {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 37px;
+}
+
+@media (max-width: 1367px) {
+  .middleWrapper {
+    justify-content: unset;
+  }
+}
+
+.filtersWrapper {
+  max-width: 238px;
+}
+
+.paginationWrapper {
+  display: flex; 
+  align-items: center;
+  justify-content: flex-end;
+
+  height: 140px;
+}
+
+@media (max-width: 767px) {
+  .paginationWrapper {
+    justify-content: center;
+  }
+}
+
+.paginationWrapper ul {
+  margin-right: 32.5%;
+}
+
+@media (max-width: 873px) {
+  .paginationWrapper ul {
+    margin-right: 24%;
+  }
+}
+
+@media (max-width: 767px) {
+  .paginationWrapper ul {
+    margin-right: unset;
+  }
+}
+
+.togglerWrapper {
+  position: relative;
+  max-width: 308px;
+}
+
+.filterTitle {
+  margin-bottom: 18px;
+
+  font-weight: 500;
+  font-size: var(--fs-3);
+  line-height: 1.5;
+  color: var(--clr-base-dk);
+  text-transform: uppercase;
+}
+
+.filterToggler {
+  position: absolute;
+  top: -5px;
+  right: 0;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  background-color: rgba(255, 202, 101, 0.3);
+  background-image: url('/src/assets/img/arrow-down-dark.svg');
+  background-size: 8px 4px;
+  background-position: center;
+  background-repeat: no-repeat;  
+}
+
+.filterToggler.toggled {
+  background-image: url('/src/assets/img/arrow-up-dark.svg');
+}
