@@ -1,0 +1,94 @@
+.tabView {
+  display: flex;  
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+.tabView .listItem:not(:last-child) {
+  margin-right: 11px;
+}
+
+.tabView .button {
+  min-width: 100px;
+  height: 70px;
+  padding: 0 18px;
+
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--clr-base);
+  line-height: 17px;
+  text-align: center; 
+
+  background-color: var(--clr-white);
+  border-radius: 10px;
+  box-shadow: 0 15px 70px -11px rgba(43, 28, 1, 0.04);
+}
+
+.tabView .button:hover,
+.tabView .button:focus {
+  background-color: var(--clr-primary); 
+}
+
+.tabView .button.active {
+  color: var(--clr-base-dk);
+  background-color: var(--clr-primary-dk);
+}
+
+.textView {
+  display: flex;
+  flex-direction: column;  
+}
+
+.textView .listItem:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .textView .listItem:not(:last-child) {
+    margin-bottom: 4px;
+  }
+}
+
+.textView .button {
+  min-width: 100px;
+  height: 30px;
+  padding-bottom: 5px;  
+
+  border-bottom: 2px solid transparent;
+
+  font-weight: 500;
+  font-size: var(--fs-3);
+  text-transform: uppercase;
+  color: #111111;
+}
+
+@media (max-width: 767px) {
+  .textView .button {
+    height: 23px;
+    padding-bottom: 3px;  
+  
+    border-bottom: 1px solid transparent;
+
+    font-weight: 400;
+    font-size: var(--fs-base);
+    line-height: 17px;
+    color: var(--clr-base);
+    text-transform: unset;
+  }
+}
+
+.textView .button:hover,
+.textView .button:focus {   
+  border-bottom: 2px solid var(--clr-base-dk);
+}
+
+.textView .button.active {
+  border-bottom: 2px solid var(--clr-primary-dk);
+}
+ 
+
+
+
+
+
