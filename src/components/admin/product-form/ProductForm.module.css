@@ -1,0 +1,80 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  
+  width: 600px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 250px
+}
+
+.label {
+  margin-bottom: 3px;
+
+  font-size: var(--fs-3);
+  font-weight: 700;
+  color: var(--clr-base-dk);
+}
+
+.input {
+  height: 30px;
+  padding: 5px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: var(--fs-4);
+  color: var(--clr-base);
+
+  border: solid 1px var(--bg-clr-base);
+}
+
+.submitBtn,
+.cancelBtn {
+  justify-content: center;
+
+  width: 192px;
+  height: 59px;
+
+  margin-top: 30px;
+
+  color: var(--clr-white);
+  border-radius: 50px;
+  background-color: var(--clr-primary);
+}
+
+.submitBtn:hover,
+.submitBtn:focus {
+  background-color: var(--clr-primary-dk);
+}
+
+.submitBtn:active {
+  transform: scale(0.98);
+}
+
+.cancelBtn {
+  width: 140px;
+  height: 39px;
+  
+  background-color: var(--clr-danger);
+}
+
+.cancelBtn:hover,
+.cancelBtn:focus {
+  background-color: var(--clr-danger-dk);
+}
+
+.errorMessage {
+  font-weight: 700;
+  color: var(--clr-danger);
+}
+
