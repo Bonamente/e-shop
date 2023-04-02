@@ -1,0 +1,59 @@
+.actionBtn {
+  justify-content: center;
+
+  width: 184px;
+  min-height: 59px;
+  padding: 10px 10px;
+ 
+  font-size: var(--fs-base);
+  font-weight: 800;
+  text-transform: uppercase;
+
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+
+  border-radius: 50px;
+}
+
+.actionBtn.disabled {
+  pointer-events: none;
+  background-color: var(--clr-base-lt);
+} 
+
+.actionBtn:hover,
+.actionBtn:focus {
+  background-color: var(--clr-primary-dk);
+}
+
+.actionBtn:active {
+  transform: scale(0.97);
+}
+
+.add {
+  background-color: var(--clr-action);
+}
+
+.add:hover,
+.add:focus {
+  background-color: var(--clr-action-dk);
+}
+
+.edit {
+  background-color: var(--clr-primary);
+}
+
+.edit:hover,
+.edit:focus {
+  background-color: var(--clr-primary-dk);
+}
+
+.remove {
+  background-color: var(--clr-danger);
+}
+
+.remove:hover,
+.remove:focus {
+  background-color: var(--clr-danger-dk);
+}
+
+
