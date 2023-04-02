@@ -4,7 +4,7 @@ import Logo from '../logo/Logo';
 import CatalogBtn from '../buttons/catalog-btn/CatalogBtn';
 import SearchBar from '../search-bar/SearchBar';
 import PriceListBtn from '../buttons/priceList-btn/PriceListBtn';
-import CartInfo from '../cart-info/CartInfo';
+import CartInfo from '../cart/cart-info/CartInfo';
 
 const Navbar = () => {
   return (
