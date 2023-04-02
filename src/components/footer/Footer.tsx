@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import Logo from '../logo/Logo';
 import NavLinks from '../navLinks/NavLinks';
 import PriceListBtn from '../buttons/priceList-btn/PriceListBtn';
-import styles from './Footer.module.css';
 import useResize from '../../hooks/useResize';
+import styles from './Footer.module.css';
 
 const Footer = () => {
   const [isSmallScreen] = useResize();
@@ -185,6 +185,9 @@ const Footer = () => {
                   />
                 </div>
               </div>
+              <Link className={styles.adminPageLink} to="/admin">
+                Админ-панель
+              </Link>
             </div>
             <div
               className={styles.messengers}
