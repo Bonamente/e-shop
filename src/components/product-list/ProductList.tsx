@@ -8,7 +8,11 @@ type ProductListProps = {
 };
 
 const ProductList: React.FC<ProductListProps> = ({ products }) => {
-  return (
+  return products.length === 0 ? (
+    <ul className={styles.productList}>
+      <p className={styles.empty}>По Вашему запросу ничего не найдено.</p>
+    </ul>
+  ) : (
     <ul className={styles.productList}>
       {products.map((product: Product) => {
         const {

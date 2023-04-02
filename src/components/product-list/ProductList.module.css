@@ -7,6 +7,13 @@
   max-width: 1020px; 
 }
 
+.empty {
+  margin-top: 50px;
+
+  font-size: var(--fs-3);
+  font-weight: 700;
+}  
+
 @media (max-width: 1367px) {
   .productList {
     justify-content: center;
