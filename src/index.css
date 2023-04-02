@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 html {
   box-sizing: border-box;
@@ -25,6 +25,9 @@ body {
   --clr-primary:#ffc85e;
   --clr-primary-dk:#f3a50d;
   --clr-action: #1fd85d;
+  --clr-action-dk: #18c451;
+  --clr-danger: rgb(255, 0, 0);
+  --clr-danger-dk: rgb(223, 4, 4); 
 
   --ff-base: 'Inter', sans-serif;     
   --fs-base: 14px;
@@ -44,6 +47,17 @@ body {
   font-size: var(--fs-base);
   font-weight: 300;
   line-height: 1.5;  
+}
+
+@layer base {
+  input[type='number']::-webkit-outer-spin-button,
+  input[type='number']::-webkit-inner-spin-button,
+  input[type='number'] {
+    appearance: none;
+    -webkit-appearance: none;
+    margin: 0;
+    -moz-appearance: textfield !important;
+  }
 }
 
 #root {
@@ -115,6 +129,14 @@ img {
 @media (max-width: 1367px) {
   .container {
     max-width: 970px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .container {
+    max-width: unset;
+    width: 100%;
+    padding: 0 15px;
   }
 }
 
