@@ -13,6 +13,8 @@ const initialState: FilterState = {
   allProducts: [],
   filteredProducts: [],
   sort: 'name-a',
+  initMinPrice: 0,
+  initMaxPrice: 0,
   filters: {
     searchValue: '',
     manufacturers: [],
@@ -21,7 +23,6 @@ const initialState: FilterState = {
     maxPrice: 0,
   },
 
-  // TODO
   currentPage: 1,
 };
 
@@ -31,11 +32,19 @@ const filterSlice = createSlice({
   reducers: {
     loadAllProducts(state, action: PayloadAction<Product[]>) {
       const prices = action.payload.map((product) => product.price);
+      const minPrice = Math.min(...prices);
       const maxPrice = Math.max(...prices);
 
       state.allProducts = action.payload;
       state.filteredProducts = action.payload;
+      state.filters.minPrice = minPrice;
+      state.initMinPrice = minPrice;
       state.filters.maxPrice = maxPrice;
+      state.initMaxPrice = maxPrice;
+    },
+
+    setCurrentPage: (state, { payload }) => {
+      state.currentPage = payload;
     },
 
     updateSort(state, action: PayloadAction<Sort>) {
@@ -66,7 +75,7 @@ const filterSlice = createSlice({
       state.filteredProducts = sorted;
     },
 
-    updateFilters: <K extends keyof Filters>(
+    updateFilter: <K extends keyof Filters>(
       state: FilterState,
       action: PayloadAction<{ name: K; value: Filters[K] }>
     ) => {
@@ -84,7 +93,9 @@ const filterSlice = createSlice({
       // filter by search input value (manufacturer's name)
       if (searchValue) {
         products = products.filter((product) =>
-          product.manufacturer.toLowerCase().startsWith(searchValue)
+          product.manufacturer
+            .toLowerCase()
+            .startsWith(searchValue.toLowerCase())
         );
       }
 
@@ -108,6 +119,7 @@ const filterSlice = createSlice({
       );
 
       state.filteredProducts = products;
+      state.currentPage = 1;
     },
 
     clearFilters(state) {
@@ -117,9 +129,10 @@ const filterSlice = createSlice({
           searchValue: '',
           manufacturers: [],
           careType: '',
-          minPrice: 0,
-          maxPrice: state.filters.maxPrice,
+          minPrice: state.initMinPrice,
+          maxPrice: state.initMaxPrice,
         },
+        currentPage: 1,
       };
     },
   },
@@ -128,10 +141,11 @@ const filterSlice = createSlice({
 export const {
   loadAllProducts,
   updateSort,
-  updateFilters,
+  updateFilter,
   sortProducts,
   filterProducts,
-  // setCurrentPage, TODO
+  clearFilters,
+  setCurrentPage,
 } = filterSlice.actions;
 
 export default filterSlice.reducer;

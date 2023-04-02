@@ -14,6 +14,8 @@ export type FilterState = {
   allProducts: Product[];
   filteredProducts: Product[];
   sort: Sort;
+  initMinPrice: number;
+  initMaxPrice: number;
   filters: Filters;
   currentPage: number;
 };
