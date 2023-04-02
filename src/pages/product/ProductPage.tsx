@@ -79,8 +79,8 @@ const ProductPage = () => {
                 className={styles.packagingIcon}
                 src={
                   sizeType === 'volume'
-                    ? '/src/assets/img/bottle-icon.svg'
-                    : '/src/assets/img/box-icon.svg'
+                    ? '/icons/bottle-icon.svg'
+                    : '/icons/box-icon.svg'
                 }
                 width={sizeType === 'volume' ? 9 : 20}
                 height={sizeType === 'volume' ? 15 : 16}
@@ -176,11 +176,7 @@ const ProductPage = () => {
                   }`,
                 }}
               >
-                <img
-                  src="/src/assets/img/arrow-down.svg"
-                  role="presentation"
-                  alt=""
-                />
+                <img src="/icons/arrow-down.svg" role="presentation" alt="" />
               </span>
             </button>
 
@@ -211,11 +207,7 @@ const ProductPage = () => {
                   }`,
                 }}
               >
-                <img
-                  src="/src/assets/img/arrow-down.svg"
-                  role="presentation"
-                  alt=""
-                />
+                <img src="/icons/arrow-down.svg" role="presentation" alt="" />
               </span>
             </button>
 

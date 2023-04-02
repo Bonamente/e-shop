@@ -94,7 +94,7 @@ section:not(:first-child):not(:last-child) {
   content: '';
   width: 13px;
   height: 13px;
-  background-image: url("/src/assets/img/download-icon.svg");
+  background-image: url("/icons/download-icon.svg");
 
   background-size: 13px 13px;
   background-position: center;
@@ -169,7 +169,7 @@ section:not(:first-child):not(:last-child) {
 
   border-radius: 50%;  
   background-color: var(--clr-primary);
-  background-image: url("/src/assets/img/mail-arrow-icon.svg");
+  background-image: url("/icons/mail-arrow-icon.svg");
   background-size: 8px 15px;
   background-repeat: no-repeat;
   background-position: center;

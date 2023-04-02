@@ -116,12 +116,12 @@
 
   border-radius: 50%;
   background-color: rgba(255, 202, 101, 0.3);
-  background-image: url('/src/assets/img/arrow-down-dark.svg');
+  background-image: url('/icons/arrow-down-dark.svg');
   background-size: 8px 4px;
   background-position: center;
   background-repeat: no-repeat;  
 }
 
 .filterToggler.toggled {
-  background-image: url('/src/assets/img/arrow-up-dark.svg');
+  background-image: url('/icons/arrow-up-dark.svg');
 }

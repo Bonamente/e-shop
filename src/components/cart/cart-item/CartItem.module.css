@@ -191,7 +191,7 @@
   border-radius: 50%;
   background-color: var(--clr-primary);
 
-  background-image: url('/src/assets/img/basket-icon.svg');
+  background-image: url('/icons/basket-icon.svg');
   background-position: center;
   background-repeat: no-repeat; 
 }

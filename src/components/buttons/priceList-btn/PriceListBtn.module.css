@@ -41,7 +41,7 @@
   width: 15px;
   height: 15px;
 
-  background-image: url('/src/assets/img/download-icon.svg');
+  background-image: url('/icons/download-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -78,7 +78,7 @@
   width: 12px;
   height: 12px;
 
-  background-image: url('/src/assets/img/download-icon-dark.svg');
+  background-image: url('/icons/download-icon-dark.svg');
   background-position: center;
   background-repeat: no-repeat;
 }

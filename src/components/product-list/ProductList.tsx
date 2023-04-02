@@ -37,8 +37,8 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
                   className={styles.packagingIcon}
                   src={
                     sizeType === 'volume'
-                      ? 'src/assets/img/bottle-icon.svg'
-                      : 'src/assets/img/box-icon.svg'
+                      ? '/icons/bottle-icon.svg'
+                      : '/icons/box-icon.svg'
                   }
                   width={sizeType === 'volume' ? 9 : 20}
                   height={sizeType === 'volume' ? 15 : 16}

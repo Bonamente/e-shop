@@ -208,7 +208,7 @@
   border-radius: 10px;
   background-color: var(--clr-white);  
 
-  background-image: url('/src/assets/img/share-icon.svg');
+  background-image: url('/icons/share-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
 
@@ -328,7 +328,7 @@
   height: 1px;
   border-bottom: 1px dashed rgba(63, 78, 101, 0.3);
 
-  background-image: url('/src/assets/img/download-icon.svg');
+  background-image: url('/icons/download-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
 }
