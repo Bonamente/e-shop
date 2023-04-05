@@ -7,7 +7,11 @@ import { updateFilter, clearFilters } from '../../../store/filters/slice';
 import SearchBar from '../../search-bar/SearchBar';
 import styles from './MainFilter.module.css';
 
-const MainFilter = () => {
+type MainFilterProps = {
+  toggleFilterDisplay?: () => void;
+};
+
+const MainFilter: React.FC<MainFilterProps> = ({ toggleFilterDisplay }) => {
   const dispatch = useDispatch();
   const [isSmallScreen] = useResize();
   const { allProducts, initMinPrice, initMaxPrice, filters } = useAppSelector(
@@ -93,6 +97,10 @@ const MainFilter = () => {
     dispatch(updateFilter({ name: 'minPrice', value: minPrice }));
     dispatch(updateFilter({ name: 'maxPrice', value: maxPrice }));
     dispatch(updateFilter({ name: 'manufacturers', value: manufacturers }));
+
+    if (isSmallScreen && toggleFilterDisplay) {
+      toggleFilterDisplay();
+    }
   };
 
   return (

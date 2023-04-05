@@ -87,7 +87,7 @@ const CatalogPage = () => {
               </>
             );
           case isSmallScreen && isFilterShown:
-            return <MainFilter />;
+            return <MainFilter toggleFilterDisplay={handleToggler} />;
           default:
             return <CareTypeFilter />;
         }
