@@ -49,11 +49,15 @@
 
 .details {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: start;
 
-  width: 481px;
-  height: 161px;
+  width: 481px;  
+}
+
+.details div:first-child {
+  margin-bottom: 10px;
 }
 
 @media (max-width: 1367px) { 
@@ -71,6 +75,8 @@
 }
 
 .name {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: var(--fs-2);
   line-height: 36px;
@@ -94,9 +100,12 @@
 }
 
 @media (max-width: 1023px) {
-  .actions {
-    
+  .actions {    
     justify-content: center;
+  }
+
+  .description {
+    margin-bottom: 15px;  
   }
 }
 
