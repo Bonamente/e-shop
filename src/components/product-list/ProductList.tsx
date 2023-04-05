@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import AddToCartBtn from '../buttons/addToCart-btn/AddToCartBtn';
 import { Product } from '../../store/products/types';
+import ProductSize from '../product-size/ProductSize';
 import styles from './ProductList.module.css';
 
 type ProductListProps = {
@@ -32,21 +33,7 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
               <div className={styles.imgWrapper}>
                 <img className={styles.productImg} src={imgUrl} alt={name} />
               </div>
-              <p className={styles.productSize}>
-                <img
-                  className={styles.packagingIcon}
-                  src={
-                    sizeType === 'volume'
-                      ? 'icons/bottle-icon.svg'
-                      : 'icons/box-icon.svg'
-                  }
-                  width={sizeType === 'volume' ? 9 : 20}
-                  height={sizeType === 'volume' ? 15 : 16}
-                  alt="иконка упаковки"
-                />
-
-                <span> {`${size} ${sizeType === 'volume' ? 'мл' : 'г'}`}</span>
-              </p>
+              <ProductSize size={size} sizeType={sizeType} />
             </div>
             <div className={styles.productInfo}>
               <Link to={`product/${id}`} className={styles.productLink}>

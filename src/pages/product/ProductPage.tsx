@@ -6,6 +6,7 @@ import Breadcrumbs from '../../components/breadcrumbs/Breadcrumbs';
 import AmountButtons from '../../components/buttons/amount-btns/AmountButtons';
 import AddToCartBtn from '../../components/buttons/addToCart-btn/AddToCartBtn';
 import PriceListBtn from '../../components/buttons/priceList-btn/PriceListBtn';
+import ProductSize from '../../components/product-size/ProductSize';
 import { careTypeMap } from '../../utils/constants';
 import type { CareTypeMap } from '../../utils/constants';
 import styles from './ProductPage.module.css';
@@ -74,20 +75,7 @@ const ProductPage = () => {
           <h1 className={styles.title}>{name}</h1>
 
           {isSmallScreen ? null : (
-            <p className={styles.productSize}>
-              <img
-                className={styles.packagingIcon}
-                src={
-                  sizeType === 'volume'
-                    ? 'icons/bottle-icon.svg'
-                    : 'icons/box-icon.svg'
-                }
-                width={sizeType === 'volume' ? 9 : 20}
-                height={sizeType === 'volume' ? 15 : 16}
-                alt="иконка упаковки"
-              />
-              <span> {`${size} ${sizeType === 'volume' ? 'мл' : 'г'}`}</span>
-            </p>
+            <ProductSize size={size} sizeType={sizeType} />
           )}
 
           <div className={styles.userActions}>

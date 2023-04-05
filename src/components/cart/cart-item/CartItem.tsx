@@ -1,5 +1,6 @@
 import { useAppDispatch } from '../../../hooks/redux-hooks';
 import AmountButtons from '../../buttons/amount-btns/AmountButtons';
+import ProductSize from '../../product-size/ProductSize';
 import type { CartItem as CartItemType } from '../../../store/cart/types';
 import {
   removeFromCart,
@@ -36,20 +37,7 @@ const CartItem: React.FC<CartItemProps> = ({
           <img className={styles.itemImg} src={imgUrl} alt={name} />
         </div>
         <div className={styles.details}>
-          <p className={styles.productSize}>
-            <img
-              className={styles.packagingIcon}
-              src={
-                sizeType === 'volume'
-                  ? 'icons/bottle-icon.svg'
-                  : 'icons/box-icon.svg'
-              }
-              width={sizeType === 'volume' ? 9 : 20}
-              height={sizeType === 'volume' ? 15 : 16}
-              alt="иконка упаковки"
-            />
-            <span> {`${size} ${sizeType === 'volume' ? 'мл' : 'г'}`}</span>
-          </p>
+          <ProductSize size={size} sizeType={sizeType} />
           <h3 className={styles.name}>{name}</h3>
           <p className={styles.description}>{description}</p>
         </div>
