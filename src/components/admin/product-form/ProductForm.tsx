@@ -71,6 +71,7 @@ const ProductForm: React.FC<ProductFormProps> = ({
   const handleCancel = () => {
     resetActiveBtn(null);
     deselectProduct(null);
+    window.scrollTo(0, 0);
   };
 
   const handleSubmit = (e: React.BaseSyntheticEvent) => {
@@ -108,6 +109,8 @@ const ProductForm: React.FC<ProductFormProps> = ({
       resetActiveBtn(null);
       deselectProduct(null);
     }
+
+    window.scrollTo(0, 0);
   };
 
   return (
