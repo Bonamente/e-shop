@@ -87,7 +87,9 @@ const cartSlice = createSlice({
           const { amount, price } = cartItem;
 
           total.totalItems += amount;
-          total.totalPrice += price * amount;
+          total.totalPrice = Number(
+            (total.totalPrice + price * amount).toFixed(2)
+          );
 
           return total;
         },
