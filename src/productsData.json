@@ -9,7 +9,7 @@
     "careType": ["body"],
     "sizeType": "weight",
     "size": 90,
-    "price": 50,
+    "price": 50.85,
     "imgUrl": "images/1.jpg"
   },
   {
@@ -35,7 +35,7 @@
     "careType": ["body"],
     "sizeType": "volume",
     "size": 50,
-    "price": 120,
+    "price": 120.15,
     "imgUrl": "images/3.jpg"
   },
   {
@@ -48,7 +48,7 @@
     "careType": ["body"],
     "sizeType": "volume",
     "size": 50,
-    "price": 110,
+    "price": 110.6,
     "imgUrl": "images/4.jpg"
   },
   {
@@ -87,7 +87,7 @@
     "careType": ["hand"],
     "sizeType": "volume",
     "size": 80,
-    "price": 130,
+    "price": 130.75,
     "imgUrl": "images/7.jpg"
   },
   {
@@ -230,7 +230,7 @@
     "careType": ["hair"],
     "sizeType": "weight",
     "size": 100,
-    "price": 190,
+    "price": 190.25,
     "imgUrl": "images/18.jpg"
   },
   {
