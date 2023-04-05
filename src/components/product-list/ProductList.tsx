@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import AddToCartBtn from '../buttons/addToCart-btn/AddToCartBtn';
 import { Product } from '../../store/products/types';
 import ProductSize from '../product-size/ProductSize';
+import format from '../../utils/format';
 import styles from './ProductList.module.css';
 
 type ProductListProps = {
@@ -60,7 +61,7 @@ const ProductList: React.FC<ProductListProps> = ({ products }) => {
 
               <div className={styles.bottomWrapper}>
                 <p className={styles.price}>
-                  {price} <span className={styles.currency}>₸</span>
+                  {format(price)} <span className={styles.currency}>₸</span>
                 </p>
                 <AddToCartBtn product={product} />
               </div>

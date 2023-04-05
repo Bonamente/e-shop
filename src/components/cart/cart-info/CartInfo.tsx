@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../../../hooks/redux-hooks';
 import { countCartTotals } from '../../../store/cart/slice';
+import format from '../../../utils/format';
 import styles from './CartInfo.module.css';
 
 type CartInfoProps = {
@@ -59,7 +60,7 @@ const CartInfo: React.FC<CartInfoProps> = ({ type = 'detailed' }) => {
           <p className={styles.detailedText}>Корзина</p>
           <p>
             <span className="visually-hidden">Общая стоимость товаров:</span>
-            <span className={styles.totalPrice}>{totalPrice} ₸</span>
+            <span className={styles.totalPrice}>{format(totalPrice)} ₸</span>
           </p>
         </div>
       ) : (

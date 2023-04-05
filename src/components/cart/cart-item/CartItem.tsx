@@ -1,6 +1,7 @@
 import { useAppDispatch } from '../../../hooks/redux-hooks';
 import AmountButtons from '../../buttons/amount-btns/AmountButtons';
 import ProductSize from '../../product-size/ProductSize';
+import format from '../../../utils/format';
 import type { CartItem as CartItemType } from '../../../store/cart/types';
 import {
   removeFromCart,
@@ -52,7 +53,7 @@ const CartItem: React.FC<CartItemProps> = ({
           />
         </li>
         <li className={styles.actionsItem}>
-          <p className={styles.price}>{price} ₸</p>
+          <p className={styles.price}>{format(price)} ₸</p>
         </li>
 
         <li className={styles.actionsItem}>

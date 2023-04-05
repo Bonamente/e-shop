@@ -1,0 +1,14 @@
+const format = (price: number) => {
+  const str = price.toString();
+  const parts = str.split('.');
+
+  parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ' ');
+
+  if (parts.length > 1) {
+    parts[1] = `,${parts[1]}`;
+  }
+
+  return parts.join('');
+};
+
+export default format;

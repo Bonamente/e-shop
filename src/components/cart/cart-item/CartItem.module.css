@@ -1,5 +1,6 @@
 .itemWrapper {
   display: flex;
+  justify-content: space-between;
 }
 
 @media (max-width: 1023px) {
@@ -11,15 +12,7 @@
 
 .itemInfo {
   display: flex;
-  align-items: center;
-
-  margin-right: 85px;
-}
-
-@media (max-width: 1367px) { 
-  .itemInfo {
-    margin-right: 35px;
-  }
+  align-items: center; 
 }
 
 @media (max-width: 1023px) {

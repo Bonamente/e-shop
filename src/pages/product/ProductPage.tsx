@@ -7,6 +7,7 @@ import AmountButtons from '../../components/buttons/amount-btns/AmountButtons';
 import AddToCartBtn from '../../components/buttons/addToCart-btn/AddToCartBtn';
 import PriceListBtn from '../../components/buttons/priceList-btn/PriceListBtn';
 import ProductSize from '../../components/product-size/ProductSize';
+import format from '../../utils/format';
 import { careTypeMap } from '../../utils/constants';
 import type { CareTypeMap } from '../../utils/constants';
 import styles from './ProductPage.module.css';
@@ -80,7 +81,7 @@ const ProductPage = () => {
 
           <div className={styles.userActions}>
             <div className={styles.priceWrapper}>
-              <p className={styles.price}>{price} ₸</p>
+              <p className={styles.price}>{format(price)} ₸</p>
               <AmountButtons
                 increase={increase}
                 decrease={decrease}
