@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit';
+import { createSlice, Reducer } from '@reduxjs/toolkit';
 import { ModalState } from './types';
 
 const initialState: ModalState = {
@@ -21,4 +21,4 @@ const modalSlice = createSlice({
 
 export const { showModal, hideModal } = modalSlice.actions;
 
-export default modalSlice.reducer;
+export default modalSlice.reducer as Reducer<typeof initialState>;

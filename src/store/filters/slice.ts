@@ -1,4 +1,4 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction, Reducer } from '@reduxjs/toolkit';
 import { Product } from '../products/types';
 import { Filters, FilterState, Sort } from './types';
 
@@ -148,4 +148,4 @@ export const {
   setCurrentPage,
 } = filterSlice.actions;
 
-export default filterSlice.reducer;
+export default filterSlice.reducer as Reducer<typeof initialState>;

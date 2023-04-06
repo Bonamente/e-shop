@@ -1,5 +1,5 @@
 /* eslint-disable no-param-reassign */
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, PayloadAction, Reducer } from '@reduxjs/toolkit';
 import { getCartContentFromLocalStorage } from '../../utils/localStorage';
 import { CartItem, CartState } from './types';
 
@@ -114,4 +114,4 @@ export const {
   clearCart,
 } = cartSlice.actions;
 
-export default cartSlice.reducer;
+export default cartSlice.reducer as Reducer<typeof initialState>;
