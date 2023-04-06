@@ -1,16 +1,24 @@
-import { Outlet } from 'react-router-dom';
-import Header from './components/header/Header';
+import { Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout';
+import CatalogPage from './pages/catalog/CatalogPage';
+import ProductPage from './pages/product/ProductPage';
+import CartPage from './pages/cart/CartPage';
+import AdminPage from './pages/admin/AdminPage';
+import NotFoundPage from './pages/not-found/NotFoundPage';
 import Modal from './components/modal/Modal';
-import Footer from './components/footer/Footer';
 
 const App = () => {
   return (
     <>
-      <Header />
-      <main>
-        <Outlet />
-      </main>
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<CatalogPage />} />
+          <Route path="product/:id" element={<ProductPage />} />
+          <Route path="cart" element={<CartPage />} />
+          <Route path="admin" element={<AdminPage />} />
+        </Route>
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
       <Modal />
     </>
   );
